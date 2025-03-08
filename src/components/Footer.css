@@ -1,0 +1,39 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #333; /* Dark background like the header */
+    color: white; /* White text */
+    padding: 1rem; /* Padding for height */
+    width: 100%; /* Full width */
+    text-align: center; /* Center content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .footer-content {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Space between text and icons */
+    align-items: center; /* Vertically center */
+    max-width: 1200px; /* Optional: limit width */
+    margin: 0 auto; /* Center the content */
+    padding: 0 1rem; /* Add horizontal padding to prevent edge cutoff */
+    width: 100%; /* Ensure it spans the container */
+    box-sizing: border-box;
+  }
+  
+  .social-links {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Horizontal icon list */
+    gap: 1.5rem; /* Space between icons */
+  }
+  
+  .social-links a {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem; /* Add padding around icons for clickable area */
+  }
+  
+  .social-links a:hover {
+    color: #ddd; /* Lighter color on hover */
+  }

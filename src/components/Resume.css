@@ -1,0 +1,48 @@
+/* src/components/Resume.css */
+.resume-container {
+    max-width: 900px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the component */
+    text-align: center; /* Center-align text */
+  }
+  
+  .resume-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .resume-container p {
+    margin-bottom: 20px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .download-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .pdf-viewer {
+    width: 100%;
+    height: 600px; /* Default height for the PDF viewer */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 4px;
+    overflow: hidden; /* Ensure no overflow issues */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .pdf-viewer {
+      height: 400px; /* Reduce height on smaller screens */
+    }
+  }

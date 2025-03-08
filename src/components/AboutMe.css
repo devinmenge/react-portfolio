@@ -1,0 +1,29 @@
+/* src/components/AboutMe.css */
+.about-me-container {
+    max-width: 600px; /* Limit the width of the content for better readability */
+    margin: 40px auto; /* Center the container with larger vertical margins */
+    text-align: center; /* Center-align text and inline elements */
+  }
+  
+  /* Center the image within its paragraph */
+  .about-me-container p {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  /* Optional: Add some spacing between elements */
+  .about-me-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-me-container p {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-me-container {
+      margin: 20px auto; /* Reduce margins on smaller screens */
+      padding: 0 10px; /* Add horizontal padding for breathing room */
+    }
+  }
