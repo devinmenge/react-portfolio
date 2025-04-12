@@ -17,7 +17,7 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/devinmenge/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin/>
             </a>
           </li>
