@@ -1,7 +1,7 @@
 // src/components/AboutMe.js
 import React from 'react';
 import './AboutMe.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa'; // Import icons
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
 import ProfileImg from '../assets/j.jpg';
 import PortfolioImg1 from '../assets/project1.jpg';
@@ -14,11 +14,15 @@ function AboutMe() {
       title: 'Digital Shelf',
       image: PortfolioImg2,
       url: 'https://digital-shelf.onrender.com/',
+      repoUrl: 'https://github.com/devinmenge/digital-shelf',
+      description: 'A web app that lets you search games, add them to your collection, and write reviews.',
     },
     {
       title: 'Taskmaster',
       image: PortfolioImg3,
       url: 'https://devinmenge.github.io/project-1/',
+      repoUrl: 'https://github.com/devinmenge/project-1',
+      description: 'A day planner that lets you create and edit tasks, saving to local storage.',
     },
   ];
 
@@ -40,7 +44,7 @@ function AboutMe() {
             I am excited for any opportunities where I can continue to learn and grow!
           </p>
           <ul className="social-links">
-             <li>
+            <li>
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FaFileAlt />
               </a>
@@ -69,20 +73,24 @@ function AboutMe() {
         <h1 className="about-me-title">Portfolio</h1>
         <div className="portfolio-grid">
           {portfolioItems.map((item, index) => (
-            <a
-              key={index}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="portfolio-item"
-            >
+            <div key={index} className="portfolio-item">
               <div className="portfolio-image">
                 <img src={item.image} alt={item.title} />
                 <div className="portfolio-overlay">
-                  <h3>{item.title}</h3>
+                  <div className="portfolio-text-box">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="portfolio-title-link">
+                      <h3 className="portfolio-title">{item.title}</h3>
+                    </a>
+                    <p className="portfolio-description">{item.description}</p>
+                    <a href={item.repoUrl} target="_blank" rel="noopener noreferrer" className="portfolio-repo-link">
+                      <div className="portfolio-repo-icon">
+                        <FaGithub />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

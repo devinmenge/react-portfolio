@@ -42,10 +42,10 @@
 .about-me-body {
   font-size: 16px !important;
   line-height: 1.6;
-  margin-bottom: 20px; /* Add spacing before social links */
+  margin-bottom: 20px;
 }
 
-/* Social links styles (moved from Footer.css) */
+/* Social links styles */
 .social-links {
   list-style: none;
   padding: 0;
@@ -55,14 +55,14 @@
 }
 
 .social-links a {
-  color: #333; /* Match text color, adjust as needed */
+  color: #333;
   font-size: 1.5rem;
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .social-links a:hover {
-  color: #555; /* Slightly lighter on hover */
+  color: #555;
 }
 
 /* Portfolio styles */
@@ -84,8 +84,6 @@
 
 .portfolio-item {
   position: relative;
-  text-decoration: none;
-  color: white;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -112,7 +110,7 @@
 }
 
 .portfolio-item:hover .portfolio-image img {
-  filter: brightness(50%);
+  filter: brightness(0.5);
 }
 
 .portfolio-overlay {
@@ -122,22 +120,61 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-overlay {
+  flex-direction: column;
+  justify-content: flex-end;
+  background: transparent;
   opacity: 1;
 }
 
-.portfolio-overlay h3 {
-  margin: 0;
-  font-size: 24px;
-  text-align: center;
+.portfolio-text-box {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px); /* Add blur effect to the background */
+  -webkit-backdrop-filter: blur(6px); /* Fallback for Safari */
+  color: white;
+  padding: 15px;
+  text-align: left; /* Left-align text and icons */
+}
+
+.portfolio-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-title {
+  margin: 0 0 8px;
+  font-size: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-description {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.portfolio-repo-link {
+  text-decoration: none;
+  color: #333;
+  display: inline-flex; /* Ensure the link wraps the icon */
+}
+
+.portfolio-repo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-repo-link:hover .portfolio-repo-icon {
+  background-color: #e0e0e0;
+}
+
+.portfolio-repo-icon svg {
+  font-size: 18px;
 }
 
 /* Responsive adjustments */
@@ -158,11 +195,24 @@
   }
 
   .social-links {
-    justify-content: center; /* Center icons on mobile */
+    justify-content: center;
   }
 
-  .portfolio-overlay h3 {
-    font-size: 20px;
+  .portfolio-title {
+    font-size: 18px;
+  }
+
+  .portfolio-description {
+    font-size: 13px;
+  }
+
+  .portfolio-repo-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .portfolio-repo-icon svg {
+    font-size: 16px;
   }
 
   /* Lock font sizes to prevent scaling */
