@@ -144,6 +144,8 @@
   margin: 0 0 8px;
   font-size: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  color: #6395ff;
 }
 
 .portfolio-description {
