@@ -37,6 +37,7 @@ function AboutMe() {
           <h1 className="about-me-title">Devin Menge</h1>
           <h2 className="about-me-subheader">UConn Engineering Coding Boot Camp</h2>
           <h2 className="about-me-subheader">CompTIA A+</h2>
+          <h2 className="about-me-subheader">UConn Bachelor of Arts</h2>
           <p className="about-me-body">
             Hello! I’m a help desk specialist with 2+ years of IT experience, 
             now transitioning into web development with skills in HTML, CSS, 
